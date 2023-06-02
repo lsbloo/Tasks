@@ -1,0 +1,168 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.infnet.task.tasks_flutter_one"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/android/app/src/main/AndroidManifest.xml:3:5-67
+15-->/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/android/app/src/main/AndroidManifest.xml:3:22-64
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/android/app/src/main/AndroidManifest.xml:4:5-77
+16-->/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/android/app/src/main/AndroidManifest.xml:4:22-74
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/android/app/src/main/AndroidManifest.xml:5:5-85
+17-->/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/android/app/src/main/AndroidManifest.xml:5:22-82
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+18-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+19-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-79
+19-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-76
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
+20-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:22-76
+21
+22    <uses-feature
+22-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+23        android:glEsVersion="0x00020000"
+23-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+24        android:required="true" />
+24-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+25
+26    <queries>
+26-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:30:5-34:15
+27
+28        <!-- Needs to be explicitly declared on Android R+ -->
+29        <package android:name="com.google.android.apps.maps" />
+29-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+29-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+30    </queries>
+31
+32    <application
+33        android:name="android.app.Application"
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.6.0] /home/osvaldoairon/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+37        android:label="tasks_flutter_one" >
+38        <activity
+39            android:name="com.infnet.task.tasks_flutter_one.MainActivity"
+40            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+41            android:exported="true"
+42            android:hardwareAccelerated="true"
+43            android:launchMode="singleTop"
+44            android:theme="@style/LaunchTheme"
+45            android:windowSoftInputMode="adjustResize" >
+46
+47            <!--
+48                 Specifies an Android theme to apply to this Activity as soon as
+49                 the Android process has started. This theme is visible to the user
+50                 while the Flutter UI initializes. After that, this theme continues
+51                 to determine the Window background behind the Flutter UI.
+52            -->
+53            <meta-data
+54                android:name="io.flutter.embedding.android.NormalTheme"
+55                android:resource="@style/NormalTheme" />
+56
+57            <intent-filter>
+58                <action android:name="android.intent.action.MAIN" />
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+61            </intent-filter>
+62        </activity>
+63        <!--
+64             Don't delete the meta-data below.
+65             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+66        -->
+67        <meta-data
+68            android:name="flutterEmbedding"
+69            android:value="2" />
+70        <meta-data
+71            android:name="com.google.android.geo.API_KEY"
+72            android:value="AIzaSyB8KUBQJQ3UMa5XVZTGQWhksi7TuvgLnts" />
+73
+74        <service
+74-->[:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+75            android:name="com.google.firebase.components.ComponentDiscoveryService"
+75-->[:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+76            android:directBootAware="true"
+76-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:34:13-43
+77            android:exported="false" >
+77-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:35:13-37
+78            <meta-data
+78-->[:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+79-->[:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+81        </service>
+82        <service
+82-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
+83            android:name="com.lyokone.location.FlutterLocationService"
+83-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-71
+84            android:enabled="true"
+84-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
+85            android:exported="false"
+85-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+86            android:foregroundServiceType="location" />
+86-->[:location] /home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
+87
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+89            android:name="androidx.window.extensions"
+89-->[androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+91        <uses-library
+91-->[androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+92            android:name="androidx.window.sidecar"
+92-->[androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+94
+95        <provider
+95-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
+96            android:name="com.google.firebase.provider.FirebaseInitProvider"
+96-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:26:13-77
+97            android:authorities="com.infnet.task.tasks_flutter_one.firebaseinitprovider"
+97-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:27:13-72
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:28:13-43
+99            android:exported="false"
+99-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:29:13-37
+100            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+100-->[com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:30:13-36
+101        <uses-library
+101-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+102            android:name="org.apache.http.legacy"
+102-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+103            android:required="false" />
+103-->[com.google.android.gms:play-services-maps:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3dfde69425f081a5c08eca8a238e6098/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+104
+105        <activity
+105-->[com.google.android.gms:play-services-base:18.0.1] /home/osvaldoairon/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+106            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+106-->[com.google.android.gms:play-services-base:18.0.1] /home/osvaldoairon/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+107            android:exported="false"
+107-->[com.google.android.gms:play-services-base:18.0.1] /home/osvaldoairon/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+108            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+108-->[com.google.android.gms:play-services-base:18.0.1] /home/osvaldoairon/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+109
+110        <meta-data
+110-->[com.google.android.gms:play-services-basement:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+111            android:name="com.google.android.gms.version"
+111-->[com.google.android.gms:play-services-basement:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+112            android:value="@integer/google_play_services_version" />
+112-->[com.google.android.gms:play-services-basement:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+113    </application>
+114
+115</manifest>

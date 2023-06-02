@@ -1,0 +1,4 @@
+#Thu Jun 01 22:23:03 BRT 2023
+base.0=/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
