@@ -6,7 +6,7 @@ abstract class HomeAddTaskPresenter extends BasePresenter {
 
   void onSaveDateSelected(DateTime pickedDate);
 
-  void onClickExpandItemsForm();
+  void onClickExpandItemsForm(bool flag);
 
   void onClickAddTask(String title, String description, String date, bool isFav,
       String latitude, String longitude);
@@ -25,7 +25,7 @@ abstract class HomeAddTaskView extends BaseView {
 
   void showDatePickedSelected(String date);
 
-  void setupExpandItems();
+  void setupExpandItems(bool flag);
 
   void setupDialogConfirmLocation();
 

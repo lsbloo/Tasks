@@ -8,8 +8,8 @@ class BaseState<T extends BaseWidgetView> extends State<T>
     implements SimpleLifeCycle {
   @override
   void initState() {
-    onViewCreated();
     super.initState();
+    onViewCreated();
     WidgetsBinding.instance.addObserver(this);
   }
 

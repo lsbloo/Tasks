@@ -18,4 +18,8 @@ class HomeRepository {
   Future<Response> deleteTask(String id) {
     return _homeTaskRemoteDataSource.delete(id);
   }
+
+  Future<Response> updateTask(TaskVO taskVO, String id) {
+    return _homeTaskRemoteDataSource.update(id, jsonEncode(taskVO.toJson()));
+  }
 }

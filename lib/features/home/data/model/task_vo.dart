@@ -20,7 +20,7 @@ class TaskVO {
         "id": id,
         "favorite": favorite,
         "latitude": latitude,
-        "longitude": longitude
+        "longitude": longitude,
       };
 
   TaskVO.fromJson(Map<String, dynamic> json, key)

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:tasks_flutter_one/features/home/contract/home_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/model/task_vo.dart';
 import '../../../core/router_navigation.dart';
+import '../data/provider/home_task_provider.dart';
 import '../data/repository/home_repository.dart';
 
 class HomePresenterImpl extends Navigation implements HomePresenter {
@@ -23,13 +24,12 @@ class HomePresenterImpl extends Navigation implements HomePresenter {
   }
 
   _giveAllTasks() {
-    List<TaskVO> taskVO = [];
-
+    List<TaskVO> tasksVO = [];
     _homeRepository.getAllTasks().then((value) => {
           (jsonDecode(value.body)).forEach((key, value) {
-            taskVO.add(TaskVO.fromJson(value, key));
+            tasksVO.add(TaskVO.fromJson(value, key));
           }),
-          _view.setupTasksView(taskVO)
+          _view.setupTasksView(tasksVO)
         });
   }
 
@@ -60,5 +60,15 @@ class HomePresenterImpl extends Navigation implements HomePresenter {
               _view.showOrHideLoading(false)
             }
         });
+  }
+
+  @override
+  void navigateToEditTaskPage(context, TaskVO taskVO) {
+    navigateHomeEditTask(context, taskVO);
+  }
+
+  @override
+  void onChangeLongPress(bool flag) {
+    _view.showOnDeleteDialog(flag);
   }
 }

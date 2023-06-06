@@ -9,10 +9,16 @@ abstract class HomePresenter extends BasePresenter {
   void onCLickAddTask();
 
   void onClickDeleteTask(TaskVO taskVO);
+
+  void navigateToEditTaskPage(context,TaskVO taskVO);
+
+  void onChangeLongPress(bool flag);
 }
 
 abstract class HomeView extends BaseView {
   void sendCallNavigateHome();
 
-  void setupTasksView(List<TaskVO> tasks);
+  void setupTasksView(List<TaskVO> taskVO);
+
+  void showOnDeleteDialog(bool flag);
 }

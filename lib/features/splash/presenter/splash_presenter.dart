@@ -16,7 +16,6 @@ class SplashPresenterImpl extends Navigation implements SplashPresenter {
 
   @override
   void init() {
-    _view.showMessage("Osvaldo Test");
     _setTimeAndNavigateToHomeScreen();
   }
 

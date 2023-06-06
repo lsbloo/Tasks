@@ -39,8 +39,8 @@ class HomeAddTaskPresenterImpl extends Navigation
   }
 
   @override
-  void onClickExpandItemsForm() {
-    _view.setupExpandItems();
+  void onClickExpandItemsForm(bool flag) {
+    _view.setupExpandItems(flag);
   }
 
   @override

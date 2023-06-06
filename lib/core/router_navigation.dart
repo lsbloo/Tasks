@@ -13,6 +13,12 @@ class Navigation extends GeoLocationResolver {
     print("Navigate To Home  Add Task called");
   }
 
+  void navigateHomeEditTask(context, taskVO) {
+    Navigator.of(context).pushNamed(RouterNavigation.HOME_EDIT_TASK_SCREEN,
+    arguments: taskVO);
+    print("Navigate to Home Edit Task called");
+  }
+
   void popBackStack(context) {
     Navigator.of(context).pop();
   }
