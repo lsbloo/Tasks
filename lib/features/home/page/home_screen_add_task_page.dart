@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:ffi';
-import 'dart:math';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -303,14 +301,14 @@ class _HomeScreenAddTaskPageState extends BaseState<HomeScreenAddTaskPage>
                                                 child: Column(children: [
                                                   Row(
                                                     children: [
-                                                      Text("Titulo"),
-                                                      SizedBox(
+                                                      const Text("Titulo"),
+                                                      const SizedBox(
                                                         width: 24,
                                                       ),
                                                       Flexible(
                                                           child: Padding(
                                                         padding:
-                                                            EdgeInsets.only(
+                                                            const EdgeInsets.only(
                                                                 left: 24,
                                                                 right: 12),
                                                         child: TextField(
@@ -319,7 +317,7 @@ class _HomeScreenAddTaskPageState extends BaseState<HomeScreenAddTaskPage>
                                                           controller:
                                                               _textEditingControllerTitle,
                                                           decoration:
-                                                              InputDecoration(
+                                                              const InputDecoration(
                                                                   hintText:
                                                                       "Insira um titulo"),
                                                         ),

@@ -3,7 +3,7 @@ import 'package:tasks_flutter_one/core/router_navigation.dart';
 import '../contract/splash_contract.dart';
 
 class SplashPresenterImpl extends Navigation implements SplashPresenter {
-  SplashView _view;
+  final SplashView _view;
   static const _TIME_DEFAULT_SPLASH_SCREEN = 5;
 
   SplashPresenterImpl(this._view);

@@ -7,6 +7,7 @@ abstract class SplashPresenter extends BasePresenter {
 }
 
 abstract class SplashView extends BaseView {
+  @override
   void showMessage(String message);
   void callNavigateHome();
 }

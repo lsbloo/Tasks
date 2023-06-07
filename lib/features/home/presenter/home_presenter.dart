@@ -6,8 +6,8 @@ import '../../../core/router_navigation.dart';
 import '../data/repository/home_repository.dart';
 
 class HomePresenterImpl extends Navigation implements HomePresenter {
-  HomeView _view;
-  HomeRepository _homeRepository;
+  final HomeView _view;
+  final HomeRepository _homeRepository;
 
   HomePresenterImpl(this._view, this._homeRepository);
 

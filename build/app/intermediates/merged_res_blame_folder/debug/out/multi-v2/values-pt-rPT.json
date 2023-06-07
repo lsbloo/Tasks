@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.infnet.task.tasks_flutter_one.app-mergeDebugResources-14:/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "com.infnet.task.tasks_flutter_one.app-mergeDebugResources-15:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/home/osvaldoairon/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res/values-pt-rPT/values-pt-rPT.xml",
@@ -13,11 +13,28 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "24",
                         "startColumns": "4",
-                        "startOffsets": "2389",
+                        "startOffsets": "2819",
                         "endColumns": "100",
-                        "endOffsets": "2485"
+                        "endOffsets": "2915"
+                    }
+                },
+                {
+                    "source": "/home/osvaldoairon/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,171,270,382",
+                        "endColumns": "115,98,111,102",
+                        "endOffsets": "166,265,377,480"
+                    },
+                    "to": {
+                        "startLines": "20,21,22,23",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2389,2505,2604,2716",
+                        "endColumns": "115,98,111,102",
+                        "endOffsets": "2500,2599,2711,2814"
                     }
                 },
                 {

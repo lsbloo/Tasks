@@ -33,8 +33,9 @@ dependencies:
   provider: ^6.0.5
   http: ^0.13.6
   uuid: ^3.0.6
+  firebase_auth: ^4.6.2
   tasks_firebase:
-    path: "/home/osvaldoairon/Documentos/repositorios/softRepo/TasksFlutter/tasks_firebase"
+    path: ../Tasks/tasks_firebase
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -54,6 +55,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  mockito: ^5.4.1
+  build_runner: ^2.4.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

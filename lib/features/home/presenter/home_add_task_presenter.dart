@@ -1,5 +1,3 @@
-import 'dart:convert';
-import 'dart:math';
 
 import 'package:tasks_flutter_one/core/router_navigation.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_add_task_contract.dart';
@@ -9,8 +7,8 @@ import 'package:tasks_flutter_one/features/utils/extensions.dart';
 
 class HomeAddTaskPresenterImpl extends Navigation
     implements HomeAddTaskPresenter {
-  HomeAddTaskView _view;
-  HomeRepository _homeRepository;
+  final HomeAddTaskView _view;
+  final HomeRepository _homeRepository;
   String locate = "";
   bool _popPageOK = false;
 

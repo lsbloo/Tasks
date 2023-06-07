@@ -1,5 +1,7 @@
 library tasks_firebase;
 
+import 'package:flutter/material.dart';
+
 /// A Calculator.
 class Calculator {
   /// Returns [value] plus 1.
