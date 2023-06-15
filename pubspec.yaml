@@ -36,6 +36,10 @@ dependencies:
   firebase_auth: ^4.6.2
   tasks_firebase:
     path: ../Tasks/tasks_firebase
+  task_login:
+    path: ../Tasks/task_login
+  tasks_core:
+    path: ../Tasks/tasks_core
 
 
   # The following adds the Cupertino Icons font to your application.

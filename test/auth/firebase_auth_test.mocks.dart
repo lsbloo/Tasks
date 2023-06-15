@@ -72,4 +72,39 @@ class MockFirebaseTaskAuth extends _i1.Mock implements _i3.FirebaseTaskAuth {
           ),
         )),
       ) as _i4.Future<_i2.FirebaseAuthVO>);
+  @override
+  _i4.Future<_i2.FirebaseAuthVO> createUserWithEmailAndPassword(
+    String? email,
+    String? password,
+  ) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #createUserWithEmailAndPassword,
+          [
+            email,
+            password,
+          ],
+        ),
+        returnValue: _i4.Future<_i2.FirebaseAuthVO>.value(_FakeFirebaseAuthVO_0(
+          this,
+          Invocation.method(
+            #createUserWithEmailAndPassword,
+            [
+              email,
+              password,
+            ],
+          ),
+        )),
+        returnValueForMissingStub:
+            _i4.Future<_i2.FirebaseAuthVO>.value(_FakeFirebaseAuthVO_0(
+          this,
+          Invocation.method(
+            #createUserWithEmailAndPassword,
+            [
+              email,
+              password,
+            ],
+          ),
+        )),
+      ) as _i4.Future<_i2.FirebaseAuthVO>);
 }

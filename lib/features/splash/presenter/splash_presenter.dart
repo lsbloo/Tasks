@@ -1,5 +1,4 @@
-import 'package:tasks_flutter_one/core/router_navigation.dart';
-
+import 'package:tasks_core/navigation/router_navigation.dart';
 import '../contract/splash_contract.dart';
 
 class SplashPresenterImpl extends Navigation implements SplashPresenter {
@@ -16,17 +15,22 @@ class SplashPresenterImpl extends Navigation implements SplashPresenter {
 
   @override
   void init() {
-    _setTimeAndNavigateToHomeScreen();
+    _setTimeAndNavigateToLoginScreen();
   }
 
-  void _setTimeAndNavigateToHomeScreen() {
+  void _setTimeAndNavigateToLoginScreen() {
     Future.delayed(const Duration(seconds: _TIME_DEFAULT_SPLASH_SCREEN), () {
-      _view.callNavigateHome();
+      _view.callNavigateToLogin();
     });
   }
 
   @override
   void navigateToHome(context) {
     navigateHome(context);
+  }
+
+  @override
+  void navigateToLogin(context) {
+    navigateLogin(context);
   }
 }

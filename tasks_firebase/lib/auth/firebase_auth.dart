@@ -24,4 +24,21 @@ class FirebaseTaskAuth implements FirebaseAuthService {
           FirebaseAuthConst.FIREBASE_AUTHENTICATE_UNSUCCESSFUL, null, null));
     }
   }
+
+  @override
+  Future<FirebaseAuthVO> createUserWithEmailAndPassword(
+      String email, String password) async {
+    try {
+      UserCredential firebaseAuth = await _firebaseAuth
+          .createUserWithEmailAndPassword(email: email, password: password);
+      return Future<FirebaseAuthVO>.value(FirebaseAuthVO(
+          true,
+          FirebaseAuthConst.FIREBASE_CREATE_USER_SUCCESSFUL,
+          firebaseAuth.credential?.accessToken,
+          null));
+    } catch (e) {
+      return Future<FirebaseAuthVO>.value(FirebaseAuthVO(false,
+          FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL, null, null));
+    }
+  }
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tasks_flutter_one/core/state/base_state.dart';
-import 'package:tasks_flutter_one/core/state/base_widget_view.dart';
+import 'package:tasks_core/core/state/base_state.dart';
+import 'package:tasks_core/core/state/base_widget_view.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_edit_task_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/model/task_vo.dart';
 import 'package:tasks_flutter_one/features/home/data/provider/home_task_provider.dart';
 import 'package:tasks_flutter_one/features/home/data/repository/home_repository.dart';
-import '../../../design-ui/color/colors_resource.dart';
+import 'package:tasks_core/design-ui/color/colors_resource.dart';
 import '../presenter/home_edit_task_presenter.dart';
 
 class HomeScreenEditPage extends BaseWidgetView {

@@ -613,6 +613,20 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  task_login:
+    dependency: "direct main"
+    description:
+      path: task_login
+      relative: true
+    source: path
+    version: "0.0.1"
+  tasks_core:
+    dependency: "direct main"
+    description:
+      path: tasks_core
+      relative: true
+    source: path
+    version: "0.0.1"
   tasks_firebase:
     dependency: "direct main"
     description:

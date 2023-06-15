@@ -3,14 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:tasks_flutter_one/core/state/base_state.dart';
-import 'package:tasks_flutter_one/core/state/base_widget_view.dart';
-import 'package:tasks_flutter_one/design-ui/color/colors_resource.dart';
+import 'package:tasks_core/core/state/base_state.dart';
+import 'package:tasks_core/core/state/base_widget_view.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/repository/home_repository.dart';
 import 'package:tasks_flutter_one/features/home/presenter/home_presenter.dart';
-
-import '../../../design-ui/components/add_task_component.dart';
+import 'package:tasks_core/design-ui/color/colors_resource.dart';
+import 'package:tasks_core/design-ui/components/add_task_component.dart';
 import '../data/model/task_vo.dart';
 import '../data/provider/home_task_provider.dart';
 

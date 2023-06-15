@@ -1,9 +1,8 @@
 import 'dart:convert';
 
+import 'package:tasks_core/navigation/router_navigation.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/model/task_vo.dart';
-import '../../../core/router_navigation.dart';
-import '../data/provider/home_task_provider.dart';
 import '../data/repository/home_repository.dart';
 
 class HomePresenterImpl extends Navigation implements HomePresenter {

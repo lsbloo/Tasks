@@ -15,6 +15,12 @@
       <excludeFolder url="file://$MODULE_DIR$/tasks_firebase/build" />
       <excludeFolder url="file://$MODULE_DIR$/tasks_firebase/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/tasks_firebase/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/tasks_core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/tasks_core/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/tasks_core/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task_login/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task_login/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task_login/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -3,6 +3,7 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 @GenerateNiceMocks([MockSpec<FirebaseTaskAuth>()])
 import 'package:tasks_firebase/auth/firebase_auth.dart';
+import 'package:tasks_firebase/auth/firebase_auth_const.dart';
 import 'package:tasks_firebase/firebase_vo/firebase_auth_vo.dart';
 
 import 'firebase_auth_test.mocks.dart';
@@ -21,4 +22,44 @@ void main() {
         .authenticateWithEmailAndPassword("osvaldo", "21313")
         .then((value) => {expect(false, value.hasAuthenticateSuccessful)});
   });
+
+  test(
+      'should returned create user true when createUserWithEmailAndPassword has successful called',
+      () {
+    var mockFirebaseAuth = MockFirebaseTaskAuth();
+
+    when(mockFirebaseAuth.createUserWithEmailAndPassword(
+            "osvaldo.filho@al.infnet.edu.br", "40028922"))
+        .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(true,
+            FirebaseAuthConst.FIREBASE_CREATE_USER_SUCCESSFUL, null, null)));
+
+    mockFirebaseAuth
+        .createUserWithEmailAndPassword(
+            "osvaldo.filho@al.infnet.edu.br", "40028922")
+        .then((value) => {
+              expect(true, value.hasAuthenticateSuccessful),
+              expect(FirebaseAuthConst.FIREBASE_CREATE_USER_SUCCESSFUL,
+                  value.message)
+            });
+  });
+
+  test(
+      'should returned create user false when createUserWithEmailAndPassword has unsuccessful called',
+          () {
+        var mockFirebaseAuth = MockFirebaseTaskAuth();
+
+        when(mockFirebaseAuth.createUserWithEmailAndPassword(
+            "osvaldo.filho@al.infnet.edu.br", "12"))
+            .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(false,
+            FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL, null, null)));
+
+        mockFirebaseAuth
+            .createUserWithEmailAndPassword(
+            "osvaldo.filho@al.infnet.edu.br", "12")
+            .then((value) => {
+          expect(false, value.hasAuthenticateSuccessful),
+          expect(FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL,
+              value.message)
+        });
+      });
 }

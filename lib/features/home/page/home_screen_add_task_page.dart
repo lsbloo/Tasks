@@ -6,13 +6,13 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:tasks_flutter_one/core/state/base_state.dart';
-import 'package:tasks_flutter_one/core/state/base_widget_view.dart';
+import 'package:tasks_core/core/state/base_state.dart';
+import 'package:tasks_core/core/state/base_widget_view.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_add_task_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/provider/home_task_provider.dart';
 import 'package:tasks_flutter_one/features/home/data/repository/home_repository.dart';
 import 'package:tasks_flutter_one/features/home/presenter/home_add_task_presenter.dart';
-import '../../../design-ui/color/colors_resource.dart';
+import 'package:tasks_core/design-ui/color/colors_resource.dart';
 
 class HomeScreenAddTaskPage extends BaseWidgetView {
   const HomeScreenAddTaskPage({Key? key}) : super(key: key);

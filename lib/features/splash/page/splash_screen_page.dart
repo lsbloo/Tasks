@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tasks_flutter_one/core/state/base_state.dart';
-import 'package:tasks_flutter_one/core/state/base_widget_view.dart';
-import 'package:tasks_flutter_one/design-ui/color/colors_resource.dart';
-import '../../../design-ui/images/Images_resouce.dart';
+import 'package:tasks_core/core/state/base_state.dart';
+import 'package:tasks_core/core/state/base_widget_view.dart';
+import 'package:tasks_core/design-ui/color/colors_resource.dart';
+import 'package:tasks_core/design-ui/images/Images_resouce.dart';
 import '../contract/splash_contract.dart';
 import '../presenter/splash_presenter.dart';
-
 
 class SplashScreenPage extends BaseWidgetView {
   const SplashScreenPage({Key? key}) : super(key: key);
@@ -70,12 +69,13 @@ class _SplashScreenPageState extends BaseState<SplashScreenPage>
   showError(String message) {}
 
   @override
-  showOrHideLoading(bool flag) {
-
-  }
+  showOrHideLoading(bool flag) {}
 
   @override
-  popPage() {
+  popPage() {}
 
+  @override
+  void callNavigateToLogin() {
+    _presenter?.navigateToLogin(context);
   }
 }

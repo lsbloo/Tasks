@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tasks_core/navigation/app_router.dart';
 import 'package:tasks_flutter_one/features/home/data/provider/home_task_provider.dart';
-import 'navigation/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

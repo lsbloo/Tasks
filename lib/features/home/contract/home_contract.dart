@@ -1,5 +1,7 @@
-import 'package:tasks_flutter_one/core/base_presenter.dart';
-import 'package:tasks_flutter_one/core/base_view.dart';
+
+
+import 'package:tasks_core/core/base_presenter.dart';
+import 'package:tasks_core/core/base_view.dart';
 
 import '../data/model/task_vo.dart';
 
