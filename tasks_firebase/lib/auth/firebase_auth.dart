@@ -41,4 +41,9 @@ class FirebaseTaskAuth implements FirebaseAuthService {
           FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL, null, null));
     }
   }
+
+  @override
+  void initialize() {
+    print("FirebaseAuthInstance initialized");
+  }
 }

@@ -6,4 +6,6 @@ abstract class FirebaseAuthService {
 
   Future<FirebaseAuthVO> createUserWithEmailAndPassword(
       String email, String password);
+
+  void initialize();
 }

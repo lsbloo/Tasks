@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:task_login/contract/login_contract.dart';
+import 'package:task_login/data/di/login_module.dart';
 import 'package:task_login/presenter/login_presenter.dart';
 import 'package:tasks_core/core/state/base_state.dart';
 import 'package:tasks_core/core/state/base_widget_view.dart';
 import 'package:tasks_core/design-ui/color/colors_resource.dart';
 import 'package:tasks_core/design-ui/images/Images_resouce.dart';
+import 'package:tasks_firebase/auth/firebase_auth_service.dart';
 
 import '../components/login_appbar_component.dart';
+import '../injection_login.dart';
 
 class LoginScreenPage extends BaseWidgetView {
   const LoginScreenPage({Key? key}) : super(key: key);
@@ -21,7 +24,9 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
 
   @override
   void onViewCreated() {
-    _loginPresenter = LoginPresenterImpl(this);
+    configureLoginDependencies();
+    _loginPresenter = getIt<LoginPresenterInst>().newInstance(this);
+    _loginPresenter?.init();
     super.onViewCreated();
   }
 

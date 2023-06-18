@@ -107,4 +107,12 @@ class MockFirebaseTaskAuth extends _i1.Mock implements _i3.FirebaseTaskAuth {
           ),
         )),
       ) as _i4.Future<_i2.FirebaseAuthVO>);
+  @override
+  void initialize() => super.noSuchMethod(
+        Invocation.method(
+          #initialize,
+          [],
+        ),
+        returnValueForMissingStub: null,
+      );
 }
