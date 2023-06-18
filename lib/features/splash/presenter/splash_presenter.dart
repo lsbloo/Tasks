@@ -1,3 +1,4 @@
+import 'package:tasks_core/base_provider.dart';
 import 'package:tasks_core/navigation/router_navigation.dart';
 import '../contract/splash_contract.dart';
 
@@ -33,4 +34,7 @@ class SplashPresenterImpl extends Navigation implements SplashPresenter {
   void navigateToLogin(context) {
     navigateLogin(context);
   }
+
+  @override
+  void setProvider(BaseProvider baseProvider) {}
 }

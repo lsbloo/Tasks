@@ -1,4 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:tasks_core/base_provider.dart';
 
+class LoginProvider extends BaseProvider {
+  var showFeedBackMessage = "";
 
-class LoginProvider extends ChangeNotifier {}
+  void onShowFeedBackMessage(String message) {
+    showFeedBackMessage = message;
+    notifyListeners();
+  }
+
+}

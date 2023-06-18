@@ -1,3 +1,4 @@
+import 'package:tasks_core/base_provider.dart';
 import 'package:tasks_core/navigation/router_navigation.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_edit_task_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/model/task_vo.dart';
@@ -85,4 +86,7 @@ class HomeEditPresenter extends Navigation implements HomeEditTaskPresenter {
           });
     }
   }
+
+  @override
+  void setProvider(BaseProvider baseProvider) {}
 }

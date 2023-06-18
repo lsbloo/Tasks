@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:tasks_core/base_provider.dart';
 import 'package:tasks_core/navigation/router_navigation.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/model/task_vo.dart';
@@ -70,4 +71,7 @@ class HomePresenterImpl extends Navigation implements HomePresenter {
   void onChangeLongPress(bool flag) {
     _view.showOnDeleteDialog(flag);
   }
+
+  @override
+  void setProvider(BaseProvider baseProvider) {}
 }

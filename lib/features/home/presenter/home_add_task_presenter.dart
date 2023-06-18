@@ -1,3 +1,4 @@
+import 'package:tasks_core/base_provider.dart';
 import 'package:tasks_core/navigation/router_navigation.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_add_task_contract.dart';
 import 'package:tasks_flutter_one/features/home/data/model/task_vo.dart';
@@ -108,4 +109,7 @@ class HomeAddTaskPresenterImpl extends Navigation
   bool controlPage() {
     return _popPageOK;
   }
+
+  @override
+  void setProvider(BaseProvider baseProvider) {}
 }

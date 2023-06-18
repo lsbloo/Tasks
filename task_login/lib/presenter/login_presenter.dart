@@ -1,23 +1,22 @@
+import 'dart:ffi';
+
 import 'package:task_login/contract/login_contract.dart';
+import 'package:tasks_core/base_provider.dart';
 import 'package:tasks_core/navigation/router_navigation.dart';
 import 'package:tasks_firebase/auth/firebase_auth_service.dart';
-
+import 'package:provider/provider.dart';
 import '../data/provider/login_provider.dart';
 
-
 class LoginPresenterImpl extends Navigation implements LoginPresenter {
-
-  final FirebaseAuthService _firebaseAuthService;
-  final LoginProvider _loginProvider;
+  static const int _TIME_CLOSE_APP_MESSAGE = 1;
+  FirebaseAuthService _firebaseAuthService;
+  LoginProvider? _loginProvider;
   final LoginView _view;
 
-  LoginPresenterImpl(this._view, this._firebaseAuthService, this._loginProvider);
-
+  LoginPresenterImpl(this._view, this._firebaseAuthService);
 
   @override
-  void dispose() {
-
-  }
+  void dispose() {}
 
   @override
   getView() => _view;
@@ -34,11 +33,21 @@ class LoginPresenterImpl extends Navigation implements LoginPresenter {
 
   @override
   void closeApp(context) {
-    _view.closeApp();
+    Future.delayed(const Duration(seconds: _TIME_CLOSE_APP_MESSAGE),
+        () => {_view.closeApp()});
   }
 
   @override
-  void navigateToLoginSignInPage(context) {
+  void navigateToLoginSignInPage(context) {}
 
+  @override
+  void setProvider(BaseProvider baseProvider) {
+    _loginProvider = baseProvider as LoginProvider?;
+  }
+
+  @override
+  void showMessageFeedBack(context, String message) {
+    Provider.of<LoginProvider>(context, listen: false)
+        .onShowFeedBackMessage(message);
   }
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
+import 'package:tasks_core/base_provider.dart';
 import 'package:tasks_flutter_one/features/home/data/model/task_vo.dart';
 
-class HomeTaskProvider extends ChangeNotifier {
+class HomeTaskProvider extends BaseProvider {
   var onDoubleTapTaskCard = false;
   var taskSelected;
   var titleTaskEdit = "";

@@ -8,9 +8,8 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import 'data/di/login_module.dart' as _i3;
-import 'data/provider/login_provider.dart'
-    as _i4; // ignore_for_file: unnecessary_lambdas
+import 'data/di/login_module.dart'
+    as _i3; // ignore_for_file: unnecessary_lambdas
 
 // ignore_for_file: lines_longer_than_80_chars
 /// an extension to register the provided dependencies inside of [GetIt]
@@ -27,7 +26,6 @@ extension GetItInjectableX on _i1.GetIt {
     );
     final loginModule = _$LoginModule();
     gh.factory<_i3.LoginPresenterInst>(() => loginModule.loginPresenter);
-    gh.factory<_i4.LoginProvider>(() => loginModule.loginProvider);
     return this;
   }
 }

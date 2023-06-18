@@ -4,13 +4,8 @@ import 'package:task_login/presenter/login_presenter.dart';
 import 'package:tasks_firebase/auth/firebase_auth_service.dart';
 import 'package:tasks_flutter_one/injection.dart';
 
-import '../provider/login_provider.dart';
-
 @module
 abstract class LoginModule {
-  @injectable
-  LoginProvider get loginProvider => LoginProvider();
-
   @injectable
   LoginPresenterInst get loginPresenter => LoginPresenterInst();
 }
@@ -20,6 +15,6 @@ class LoginPresenterInst {
     LoginView view,
   ) {
     return LoginPresenterImpl(
-        view, getIt<FirebaseAuthService>(), getIt<LoginProvider>());
+        view, getIt<FirebaseAuthService>());
   }
 }
