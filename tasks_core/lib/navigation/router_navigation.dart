@@ -24,6 +24,12 @@ class Navigation extends GeoLocationResolver {
     print("Navigate to Home Edit Task called");
   }
 
+  void navigateCreateAccount(context) {
+    Navigator.of(context)
+        .pushNamed(RouterNavigation.LOGIN_SCREEN_CREATE_ACCOUNT);
+    print("Navigate to Create Account called");
+  }
+
   void popBackStack(context) {
     Navigator.of(context).pop();
   }

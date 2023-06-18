@@ -290,6 +290,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "highlight_text",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/highlight_text-1.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http",
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/http-0.13.6",
       "packageUri": "lib/",
@@ -578,7 +584,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-06-16T01:04:31.473524Z",
+  "generated": "2023-06-18T03:18:19.265515Z",
   "generator": "pub",
   "generatorVersion": "3.0.0"
 }

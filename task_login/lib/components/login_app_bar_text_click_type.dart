@@ -1,0 +1,5 @@
+
+enum TypeClickLoginAppBar {
+  ONBOARDING,
+  LOGIN
+}

@@ -26,4 +26,19 @@ class LoginPresenterImpl extends Navigation implements LoginPresenter {
   void init() {
     _firebaseAuthService.initialize();
   }
+
+  @override
+  void navigateToCreateAccountPage(context) {
+    navigateCreateAccount(context);
+  }
+
+  @override
+  void closeApp(context) {
+    _view.closeApp();
+  }
+
+  @override
+  void navigateToLoginSignInPage(context) {
+
+  }
 }

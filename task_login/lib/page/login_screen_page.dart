@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:highlight_text/highlight_text.dart';
 import 'package:task_login/contract/login_contract.dart';
 import 'package:task_login/data/di/login_module.dart';
-import 'package:task_login/presenter/login_presenter.dart';
 import 'package:tasks_core/core/state/base_state.dart';
 import 'package:tasks_core/core/state/base_widget_view.dart';
 import 'package:tasks_core/design-ui/color/colors_resource.dart';
 import 'package:tasks_core/design-ui/images/Images_resouce.dart';
-import 'package:tasks_firebase/auth/firebase_auth_service.dart';
 
+import '../components/login_app_bar_text_click_type.dart';
 import '../components/login_appbar_component.dart';
 import '../injection_login.dart';
 
@@ -26,7 +27,6 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
   void onViewCreated() {
     configureLoginDependencies();
     _loginPresenter = getIt<LoginPresenterInst>().newInstance(this);
-    _loginPresenter?.init();
     super.onViewCreated();
   }
 
@@ -47,8 +47,13 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   LoginAppBarComponent(
-                    onClosedClickListener: () {},
-                    onTextClickListener: () {},
+                    onClosedClickListener: () {
+                      _loginPresenter?.closeApp(context);
+                    },
+                    onTextClickListener: (type) {
+
+                    },
+                    type: TypeClickLoginAppBar.ONBOARDING,
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
@@ -93,7 +98,10 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
                           height: 24,
                         ),
                         OutlinedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              _loginPresenter
+                                  ?.navigateToCreateAccountPage(context);
+                            },
                             style: OutlinedButton.styleFrom(
                                 foregroundColor:
                                     const Color(ColorResource.WHITE_BABY_SKY),
@@ -115,10 +123,33 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
                           height: 36,
                         ),
                         const Text(
-                          "Para acessar o código fonte do aplicativo acesse o link.",
+                          "Desenvolvido para gerenciar suas tarefas! Crie novas tarefas e favorite-as. Defina nível de prioridade e crie agendamentos!",
                           style: TextStyle(
                               fontSize: 16,
                               color: Color(ColorResource.WHITE_BABY_SKY)),
+                        ),
+                        const SizedBox(
+                          height: 36,
+                        ),
+                        TextHighlight(
+                          text:
+                              "Para mais informações acesse: https://github.com/lsbloo/Tasks",
+                          matchCase: true,
+                          textAlign: TextAlign.justify,
+                          textStyle: const TextStyle(
+                              fontSize: 16,
+                              color: Color(ColorResource.WHITE_BABY_SKY)),
+                          words: {
+                            "https://github.com/lsbloo/Tasks": HighlightedWord(
+                              onTap: () {
+                                print("https://github.com/lsbloo/Tasks");
+                              },
+                              textStyle: const TextStyle(
+                                  fontSize: 16,
+                                  color: Color(ColorResource.WHITE_BABY_SKY),
+                                  decoration: TextDecoration.underline),
+                            ),
+                          },
                         ),
                       ],
                     ),
@@ -152,4 +183,9 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
 
   @override
   showOrHideLoading(bool flag) {}
+
+  @override
+  void closeApp() {
+    SystemNavigator.pop();
+  }
 }

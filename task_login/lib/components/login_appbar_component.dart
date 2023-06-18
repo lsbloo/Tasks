@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:tasks_core/design-ui/color/colors_resource.dart';
 
+import 'login_app_bar_text_click_type.dart';
+
 class LoginAppBarComponent extends StatefulWidget {
+  TypeClickLoginAppBar type;
   Function onClosedClickListener;
   Function onTextClickListener;
 
   LoginAppBarComponent(
       {required this.onClosedClickListener,
+      required this.type,
       required this.onTextClickListener,
       Key? key})
       : super(key: key);
@@ -37,9 +41,9 @@ class _LoginAppBarComponentState extends State<LoginAppBarComponent> {
               onTap: () {
                 widget.onTextClickListener();
               },
-              child: const Text(
-                "Log in",
-                style: TextStyle(color: Color(ColorResource.WHITE_BABY_SKY)),
+              child: Text(
+                widget.type == TypeClickLoginAppBar.ONBOARDING ? "Log in" : "Voltar para tela inicial?" ,
+                style: const TextStyle(color: Color(ColorResource.WHITE_BABY_SKY)),
               ),
             ))
       ],
