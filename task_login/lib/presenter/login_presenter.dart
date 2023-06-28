@@ -50,4 +50,30 @@ class LoginPresenterImpl extends Navigation implements LoginPresenter {
     Provider.of<LoginProvider>(context, listen: false)
         .onShowFeedBackMessage(message);
   }
+
+  @override
+  void registerAccount(String email, String password, bool rememberEmail) {
+    if (email.isEmpty || password.isEmpty) {
+      _view.showMessage("Digite os campos corretamente");
+    } else {
+      _view.showOrHideLoading(true);
+      _firebaseAuthService
+          .createUserWithEmailAndPassword(email, password)
+          .then((firebaseAuthVO) => {
+                _view.showOrHideLoading(false),
+                if (firebaseAuthVO.hasAuthenticateSuccessful)
+                  {
+                    _view.showMessage("Conta criada com sucesso"),
+                    Future.delayed(
+                        const Duration(seconds: 1), () => {_view.popPage()})
+                  }
+                else
+                  {
+                    _view.showMessage(
+                        "Não foi possivel criar sua conta, tente novamente!")
+                  },
+              });
+    }
+    _view.clearInputs();
+  }
 }

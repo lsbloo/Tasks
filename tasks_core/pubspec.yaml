@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   http: ^0.13.6
   location: ^4.4.0
+  shared_preferences: ^2.1.2
   tasks_flutter_one:
     path: ../
 

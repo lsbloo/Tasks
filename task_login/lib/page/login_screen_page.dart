@@ -50,7 +50,7 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
                     onClosedClickListener: () {
                       _loginPresenter?.closeApp(context);
                     },
-                    onTextClickListener: (type) {
+                    onTextClickListener: () {
 
                     },
                     type: TypeClickLoginAppBar.ONBOARDING,
@@ -187,5 +187,10 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
   @override
   void closeApp() {
     SystemNavigator.pop();
+  }
+
+  @override
+  void clearInputs() {
+
   }
 }
