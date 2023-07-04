@@ -41,34 +41,37 @@ class _CustomTaskTextFieldState extends State<CustomTaskTextField> {
             borderRadius: BorderRadius.all(Radius.circular(18.0)),
           ),
           child: SizedBox(
-            child: TextField(
-              inputFormatters: [
-                LengthLimitingTextInputFormatter(widget.maxLengthInput)
-              ],
-              obscureText: widget.isPassword == true ? true : false,
-              maxLines: 1,
-              onChanged: (text) {
-                if (text.length >= widget.maxLengthInput) {
-                  widget.onMaxLengthInputExceed();
-                } else {
-                  widget.onTextChanged(text);
-                  _controller.text = text;
-                }
-              },
-              keyboardType: TextInputType.text,
-              decoration: InputDecoration(
-                hintStyle: const TextStyle(fontSize: 18),
-                hintText: widget.hintText,
-                suffixIcon: widget.suffixIcon,
-                focusedBorder: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(18.0)),
-                  borderSide: BorderSide(width: 2, color: Colors.greenAccent),
+            child: Material(
+              color: Colors.transparent,
+              child: TextField(
+                inputFormatters: [
+                  LengthLimitingTextInputFormatter(widget.maxLengthInput)
+                ],
+                obscureText: widget.isPassword == true ? true : false,
+                maxLines: 1,
+                onChanged: (text) {
+                  if (text.length >= widget.maxLengthInput) {
+                    widget.onMaxLengthInputExceed();
+                  } else {
+                    widget.onTextChanged(text);
+                    _controller.text = text;
+                  }
+                },
+                keyboardType: TextInputType.text,
+                decoration: InputDecoration(
+                  hintStyle: const TextStyle(fontSize: 18),
+                  hintText: widget.hintText,
+                  suffixIcon: widget.suffixIcon,
+                  focusedBorder: const OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(18.0)),
+                    borderSide: BorderSide(width: 2, color: Colors.greenAccent),
+                  ),
+                  enabledBorder: const OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(18.0)),
+                    borderSide: BorderSide(width: 2, color: Colors.black),
+                  ),
+                  contentPadding: const EdgeInsets.all(14),
                 ),
-                enabledBorder: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(18.0)),
-                  borderSide: BorderSide(width: 2, color: Colors.black),
-                ),
-                contentPadding: const EdgeInsets.all(14),
               ),
             ),
           ),

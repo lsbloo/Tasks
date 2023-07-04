@@ -11,8 +11,8 @@ void main() async {
   configureDependencies();
   getIt<FirebaseService>().init();
   runApp(MultiProvider(providers: [
-    ChangeNotifierProvider.value(value: HomeTaskProvider()),
-    ChangeNotifierProvider.value(value: LoginProvider())
+    ChangeNotifierProvider<HomeTaskProvider>.value(value: HomeTaskProvider()),
+    ChangeNotifierProvider<LoginProvider>.value(value: LoginProvider())
   ], child: const MyApp()));
 }
 

@@ -30,6 +30,12 @@ class Navigation extends GeoLocationResolver {
     print("Navigate to Create Account called");
   }
 
+  void navigateSignupLogin(context) {
+    Navigator.of(context)
+        .pushNamed(RouterNavigation.LOGIN_SCREEN_SIGNUP_ACCOUNT);
+    print("Navigate to Login SignUp called");
+  }
+
   void popBackStack(context) {
     Navigator.of(context).pop();
   }

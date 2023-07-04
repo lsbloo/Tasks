@@ -123,7 +123,7 @@ void main() {
     // WHEN
     when(loginFirebaseAuthMock.createUserWithEmailAndPassword(email, password))
         .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(false,
-            FirebaseAuthConst.FIREBASE_CREATE_USER_SUCCESSFUL, null, null)));
+            FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL, null, null)));
 
     when(loginPresenterMock.registerAccount(email, password, false))
         .thenAnswer((_) {
@@ -137,7 +137,7 @@ void main() {
         .createUserWithEmailAndPassword(email, password)
         .then((value) => {
               expect(false, value.hasAuthenticateSuccessful),
-              expect(FirebaseAuthConst.FIREBASE_CREATE_USER_SUCCESSFUL,
+              expect(FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL,
                   value.message)
             });
 

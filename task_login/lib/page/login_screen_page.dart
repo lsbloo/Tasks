@@ -51,7 +51,7 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
                       _loginPresenter?.closeApp(context);
                     },
                     onTextClickListener: () {
-
+                      _loginPresenter?.navigateToLoginSignUp(context);
                     },
                     type: TypeClickLoginAppBar.ONBOARDING,
                   ),
@@ -190,7 +190,8 @@ class _LoginScreenPageState extends BaseState<LoginScreenPage>
   }
 
   @override
-  void clearInputs() {
+  void clearInputs() {}
 
-  }
+  @override
+  void navigateToHome() {}
 }

@@ -91,6 +91,13 @@
             android:exported="false"
             android:foregroundServiceType="location" />
 
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
@@ -127,13 +134,6 @@
                     android:scheme="recaptcha" />
             </intent-filter>
         </activity>
-
-        <uses-library
-            android:name="androidx.window.extensions"
-            android:required="false" />
-        <uses-library
-            android:name="androidx.window.sidecar"
-            android:required="false" />
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"

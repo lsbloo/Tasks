@@ -74,4 +74,19 @@ class HomePresenterImpl extends Navigation implements HomePresenter {
 
   @override
   void setProvider(BaseProvider baseProvider) {}
+
+  void getCurrentWeather() {
+    getLocation().then((value) => {
+          if (value.isNotEmpty)
+            {
+              _homeRepository
+                  .getWeatherCurrent(double.parse(value.split(":")[0]),
+                      double.parse(value.split(":")[1]))
+                  .then((currentWeather) =>
+                      {
+                        print(currentWeather.toJson()),
+                        _view.setupViewWeather(currentWeather)})
+            }
+        });
+  }
 }

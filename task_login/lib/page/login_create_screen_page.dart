@@ -95,4 +95,7 @@ class _LoginCreateScreenPageState extends BaseState<LoginCreateScreenPage>
       _textEmailEditingController.text = "";
     });
   }
+
+  @override
+  void navigateToHome() {}
 }

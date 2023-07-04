@@ -30,7 +30,7 @@ class CreateLoginScreenView extends BaseWidgetView {
 
 class _CreateLoginScreenViewState extends BaseState<CreateLoginScreenView> {
   @override
-  int get milliSecondsDurationAnimationPageTransition => 600;
+  int get milliSecondsDurationAnimationPageTransition => 500;
 
   bool _rememberEmail = false;
 

@@ -20,6 +20,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "archive",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/archive-3.3.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "args",
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/args-2.4.1",
       "packageUri": "lib/",
@@ -146,6 +152,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "dio",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/dio-5.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "equatable",
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/equatable-2.0.5",
       "packageUri": "lib/",
@@ -216,6 +228,12 @@
       "rootUri": "file:///home/osvaldoairon/snap/flutter/common/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/flutter_launcher_icons-0.9.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_lints",
@@ -318,6 +336,12 @@
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/image-3.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "injectable",
@@ -446,6 +470,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "petitparser",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/petitparser-5.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "platform",
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/platform-3.1.0",
       "packageUri": "lib/",
@@ -456,6 +486,12 @@
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "pointycastle",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/pointycastle-3.7.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "pool",
@@ -486,6 +522,12 @@
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/pubspec_parse-1.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "retrofit",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/retrofit-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "shared_preferences",
@@ -662,6 +704,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "xml",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/xml-6.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "yaml",
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/yaml-3.1.2",
       "packageUri": "lib/",
@@ -674,7 +722,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-06-28T17:22:32.822525Z",
+  "generated": "2023-07-04T01:15:09.076755Z",
   "generator": "pub",
   "generatorVersion": "3.0.0"
 }

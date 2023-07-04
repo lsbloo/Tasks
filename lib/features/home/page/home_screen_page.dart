@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:tasks_core/core/data/model/weather_data_model.dart';
 import 'package:tasks_core/core/state/base_state.dart';
 import 'package:tasks_core/core/state/base_widget_view.dart';
 import 'package:tasks_flutter_one/features/home/contract/home_contract.dart';
@@ -10,6 +11,8 @@ import 'package:tasks_flutter_one/features/home/data/repository/home_repository.
 import 'package:tasks_flutter_one/features/home/presenter/home_presenter.dart';
 import 'package:tasks_core/design-ui/color/colors_resource.dart';
 import 'package:tasks_core/design-ui/components/add_task_component.dart';
+import 'package:tasks_core/design-ui/components/weather_data_component.dart';
+
 import '../data/model/task_vo.dart';
 import '../data/provider/home_task_provider.dart';
 
@@ -32,6 +35,7 @@ class _HomeScreenPageStateState extends BaseState<HomeScreenPage>
   void onViewCreated() {
     _homePresenterImpl = HomePresenterImpl(this, HomeRepository());
     _homePresenterImpl?.init();
+    _homePresenterImpl?.getCurrentWeather();
     print("onViewCreated");
     super.onViewCreated();
   }
@@ -55,28 +59,31 @@ class _HomeScreenPageStateState extends BaseState<HomeScreenPage>
             right: true,
             top: true,
             bottom: true,
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  AddTaskHeaderComponent(onCLick: () {
-                    print("click called");
-                    _homePresenterImpl?.onCLickAddTask();
-                  }),
-                  _showLoadingPage
-                      ? const Center(
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2.0,
-                            backgroundColor:
-                                Color(ColorResource.BLUE_COLOR_SPLASH_SCREEN),
-                          ),
-                        )
-                      : Container(),
-                  Visibility(
-                    visible: _showItemTasksView,
-                    child: Consumer<HomeTaskProvider>(
-                      builder: (context, homeTaskProvider, child) {
-                        return Flexible(
+            child: Consumer<HomeTaskProvider>(
+              builder: (context, homeTaskProvider, child) {
+                return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      homeTaskProvider.setupCurrentWeather.onShowViewWeather
+                          ? WeatherDataComponent(
+                              weather: homeTaskProvider.setupCurrentWeather.currentWeather)
+                          : Container(),
+                      AddTaskHeaderComponent(onCLick: () {
+                        _homePresenterImpl?.onCLickAddTask();
+                      }),
+                      _showLoadingPage
+                          ? const Center(
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2.0,
+                                backgroundColor: Color(
+                                    ColorResource.BLUE_COLOR_SPLASH_SCREEN),
+                              ),
+                            )
+                          : Container(),
+                      Visibility(
+                        visible: _showItemTasksView,
+                        child: Flexible(
                           child: ListView.builder(
                               itemCount: homeTaskProvider.tasksList?.length,
                               itemBuilder: (context, index) {
@@ -273,11 +280,11 @@ class _HomeScreenPageStateState extends BaseState<HomeScreenPage>
                                       )),
                                 );
                               }),
-                        );
-                      },
-                    ),
-                  )
-                ]),
+                        ),
+                      )
+                    ]);
+              },
+            ),
           ),
         ),
       ),
@@ -335,5 +342,11 @@ class _HomeScreenPageStateState extends BaseState<HomeScreenPage>
   void showOnDeleteDialog(bool flag) {
     Provider.of<HomeTaskProvider>(context, listen: false)
         .onChangeLongPress(flag);
+  }
+
+  @override
+  void setupViewWeather(CurrentWeather weather) {
+    Provider.of<HomeTaskProvider>(context, listen: false)
+        .onShowViewWeather(weather, true);
   }
 }

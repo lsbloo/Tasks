@@ -53,7 +53,8 @@ class LoginPresenterImpl extends Navigation implements LoginPresenter {
 
   @override
   void registerAccount(String email, String password, bool rememberEmail) {
-    if (email.isEmpty || password.isEmpty) {
+    bool validateFields = _validateEmailPasswordIsEmpty(email, password);
+    if (validateFields) {
       _view.showMessage("Digite os campos corretamente");
     } else {
       _view.showOrHideLoading(true);
@@ -75,5 +76,45 @@ class LoginPresenterImpl extends Navigation implements LoginPresenter {
               });
     }
     _view.clearInputs();
+  }
+
+  @override
+  void navigateToLoginSignUp(context) {
+    navigateSignupLogin(context);
+  }
+
+  @override
+  void signUpAccount(String email, String password) {
+    bool validateFields = _validateEmailPasswordIsEmpty(email, password);
+    if (validateFields) {
+      _view.showMessage("Digite os campos corretamente");
+    } else {
+      _view.showOrHideLoading(true);
+      _firebaseAuthService
+          .authenticateWithEmailAndPassword(email, password)
+          .then((firebaseAuthVO) => {
+                _view.showOrHideLoading(false),
+                if (firebaseAuthVO.hasAuthenticateSuccessful)
+                  {
+                    _view.showMessage("Login Realizado com sucesso"),
+                    Future.delayed(const Duration(seconds: 1),
+                        () => {_view.navigateToHome()})
+                  }
+                else
+                  {
+                    _view.showMessage(
+                        "Não foi possivel realizar logar na sua conta, tente novamente!")
+                  }
+              });
+    }
+  }
+
+  bool _validateEmailPasswordIsEmpty(String email, String password) {
+    return email.isEmpty || password.isEmpty;
+  }
+
+  @override
+  void navigateToHomePage(context) {
+    navigateHome(context);
   }
 }

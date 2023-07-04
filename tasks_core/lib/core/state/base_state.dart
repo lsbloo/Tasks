@@ -10,7 +10,7 @@ class BaseState<T extends BaseWidgetView> extends BasePageTransition<T>
   late AnimationController _animationController;
   late Animation<Offset> animation;
 
-  var milliSecondsDurationAnimationPageTransition = 500;
+  var milliSecondsDurationAnimationPageTransition = 600;
 
   @override
   void initState() {

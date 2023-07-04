@@ -2,6 +2,7 @@
 
 import 'package:tasks_core/core/base_presenter.dart';
 import 'package:tasks_core/core/base_view.dart';
+import 'package:tasks_core/core/data/model/weather_data_model.dart';
 
 import '../data/model/task_vo.dart';
 
@@ -23,4 +24,6 @@ abstract class HomeView extends BaseView {
   void setupTasksView(List<TaskVO> taskVO);
 
   void showOnDeleteDialog(bool flag);
+
+  void setupViewWeather(CurrentWeather weather);
 }
