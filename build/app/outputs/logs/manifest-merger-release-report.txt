@@ -7,10 +7,10 @@ MERGED from [:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo
 MERGED from [:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-15:19
 MERGED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-18:19
 MERGED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-18:19
-MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:28:5-73:19
-MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:28:5-73:19
 MERGED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8ffc5025097db0a85dbfcff25ccb715a/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8ffc5025097db0a85dbfcff25ccb715a/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:24:5-37:19
@@ -49,15 +49,16 @@ ADDED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml:1:1-40:12
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml:1:1-40:12
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml:1:1-40:12
+MERGED from [:shared_preferences_android] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_auth] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-17:12
 MERGED from [:google_maps_flutter_android] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/google_maps_flutter_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_plugin_android_lifecycle] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-20:12
-MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:17:1-75:12
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/osvaldoairon/.gradle/caches/transforms-3/888de8ce4a347d2785a5da9f80e55fc6/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:17:1-75:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/osvaldoairon/.gradle/caches/transforms-3/888de8ce4a347d2785a5da9f80e55fc6/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8ffc5025097db0a85dbfcff25ccb715a/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:15:1-39:12
 MERGED from [androidx.core:core-ktx:1.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/de7160e65144471bc16f10f586fbe9e9/transformed/jetified-core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
@@ -71,10 +72,10 @@ MERGED from [com.google.android.play:integrity:1.1.0] /home/osvaldoairon/.gradle
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/osvaldoairon/.gradle/caches/transforms-3/2abf910d60477a0fc593cab7cd654dd1/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/392bc883a371b75d457d91422b1fe39d/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] /home/osvaldoairon/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/b709b14b30b77c7fc5e44265a8079b79/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/e513becce0ce1f99f210041696e5e24e/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/9e1e48093d3b3bd99dfc27d4415722d9/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] /home/osvaldoairon/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.6.0] /home/osvaldoairon/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/osvaldoairon/.gradle/caches/transforms-3/117af839d4b9507b8a83d43a2b0e54be/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
@@ -82,12 +83,12 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/osvaldoairon/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/175e6568d26a2ca8f2fcb6f3d9344d5f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/69c89cbb33788ff433938caf26c0f4a9/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/ef1453fc09d97d48a387e3347ce85266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-components:17.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/aeb1e9f90f90a90e9bfc5da3a27db7c6/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osvaldoairon/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/aeb1e9f90f90a90e9bfc5da3a27db7c6/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/7a48e48ed5a917de07f632fb841b3469/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml:1:1-40:12
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml:1:1-40:12
@@ -128,6 +129,8 @@ uses-sdk
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml
+MERGED from [:shared_preferences_android] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
@@ -138,14 +141,14 @@ MERGED from [:flutter_plugin_android_lifecycle] /home/osvaldoairon/Documentos/re
 MERGED from [:flutter_plugin_android_lifecycle] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:21:5-23:64
-MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:21:5-23:64
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/osvaldoairon/.gradle/caches/transforms-3/888de8ce4a347d2785a5da9f80e55fc6/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/osvaldoairon/.gradle/caches/transforms-3/888de8ce4a347d2785a5da9f80e55fc6/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/osvaldoairon/.gradle/caches/transforms-3/888de8ce4a347d2785a5da9f80e55fc6/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/osvaldoairon/.gradle/caches/transforms-3/888de8ce4a347d2785a5da9f80e55fc6/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8ffc5025097db0a85dbfcff25ccb715a/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8ffc5025097db0a85dbfcff25ccb715a/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:19:5-21:41
@@ -172,14 +175,14 @@ MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/osvaldo
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/392bc883a371b75d457d91422b1fe39d/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/392bc883a371b75d457d91422b1fe39d/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /home/osvaldoairon/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /home/osvaldoairon/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/b709b14b30b77c7fc5e44265a8079b79/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/b709b14b30b77c7fc5e44265a8079b79/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/e513becce0ce1f99f210041696e5e24e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/e513becce0ce1f99f210041696e5e24e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/9e1e48093d3b3bd99dfc27d4415722d9/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/9e1e48093d3b3bd99dfc27d4415722d9/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /home/osvaldoairon/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /home/osvaldoairon/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.6.0] /home/osvaldoairon/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
@@ -194,18 +197,18 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osvaldoairo
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/69c89cbb33788ff433938caf26c0f4a9/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.tracing:tracing:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/ef1453fc09d97d48a387e3347ce85266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/ef1453fc09d97d48a387e3347ce85266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-components:17.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/aeb1e9f90f90a90e9bfc5da3a27db7c6/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-components:17.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/aeb1e9f90f90a90e9bfc5da3a27db7c6/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osvaldoairon/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osvaldoairon/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/aeb1e9f90f90a90e9bfc5da3a27db7c6/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/aeb1e9f90f90a90e9bfc5da3a27db7c6/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/7a48e48ed5a917de07f632fb841b3469/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/7a48e48ed5a917de07f632fb841b3469/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/osvaldoairon/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 INJECTED from /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/android/app/src/main/AndroidManifest.xml
@@ -310,6 +313,18 @@ ADDED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks
 		ADDED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-53
 	android:name
 		ADDED from [:location] /home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-71
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/osvaldoairon/.gradle/caches/transforms-3/888de8ce4a347d2785a5da9f80e55fc6/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
@@ -372,18 +387,6 @@ ADDED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle
 		ADDED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.0.0] /home/osvaldoairon/.gradle/caches/transforms-3/070ea7b6a46d7e6c99abba4ed539bd51/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:70:17-109
-uses-library#androidx.window.extensions
-ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-	android:required
-		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-	android:name
-		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-uses-library#androidx.window.sidecar
-ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-	android:required
-		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-	android:name
-		ADDED from [androidx.window:window:1.0.0-beta04] /home/osvaldoairon/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.3.2] /home/osvaldoairon/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
 	android:authorities

@@ -20,10 +20,10 @@ class HomePresenterImpl extends Navigation implements HomePresenter {
 
   @override
   void init() {
-    _giveAllTasks();
+    giveAllTasks();
   }
 
-  _giveAllTasks() {
+  giveAllTasks() {
     List<TaskVO> tasksVO = [];
     _homeRepository.getAllTasks().then((value) => {
           (jsonDecode(value.body)).forEach((key, value) {

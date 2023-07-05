@@ -45,21 +45,40 @@ void main() {
 
   test(
       'should returned create user false when createUserWithEmailAndPassword has unsuccessful called',
-          () {
-        var mockFirebaseAuth = MockFirebaseTaskAuth();
+      () {
+    var mockFirebaseAuth = MockFirebaseTaskAuth();
 
-        when(mockFirebaseAuth.createUserWithEmailAndPassword(
+    when(mockFirebaseAuth.createUserWithEmailAndPassword(
             "osvaldo.filho@al.infnet.edu.br", "12"))
-            .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(false,
+        .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(false,
             FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL, null, null)));
 
-        mockFirebaseAuth
-            .createUserWithEmailAndPassword(
-            "osvaldo.filho@al.infnet.edu.br", "12")
-            .then((value) => {
-          expect(false, value.hasAuthenticateSuccessful),
-          expect(FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL,
-              value.message)
-        });
-      });
+    mockFirebaseAuth
+        .createUserWithEmailAndPassword("osvaldo.filho@al.infnet.edu.br", "12")
+        .then((value) => {
+              expect(false, value.hasAuthenticateSuccessful),
+              expect(FirebaseAuthConst.FIREBASE_CREATE_USER_UNSUCCESSFUL,
+                  value.message)
+            });
+  });
+
+  test(
+      'should returned authenticate user true when authenticateWithEmailAndPassword has successful called',
+      () {
+    var mockFirebaseAuth = MockFirebaseTaskAuth();
+
+    when(mockFirebaseAuth.authenticateWithEmailAndPassword(
+            "osvaldo.filho@al.infnet.edu.br", "12412414"))
+        .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(true,
+            FirebaseAuthConst.FIREBASE_AUTHENTICATE_SUCCESSFUL, null, null)));
+
+    mockFirebaseAuth
+        .authenticateWithEmailAndPassword(
+            "osvaldo.filho@al.infnet.edu.br", "12412414")
+        .then((value) => {
+              expect(true, value.hasAuthenticateSuccessful),
+              expect(FirebaseAuthConst.FIREBASE_AUTHENTICATE_SUCCESSFUL,
+                  value.message)
+            });
+  });
 }

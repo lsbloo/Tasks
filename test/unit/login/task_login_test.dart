@@ -150,4 +150,70 @@ void main() {
           .showMessage("Não foi possivel criar sua conta, tente novamente!")
     ]);
   });
+
+  test("should call authenticate method firebase when user send valid data",
+      () {
+    // GIVEN
+    var email = "osvaldo.filho@al.ifnet.edu.br";
+    var password = "123456";
+
+    // WHEN
+    when(loginFirebaseAuthMock.authenticateWithEmailAndPassword(
+            email, password))
+        .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(true,
+            FirebaseAuthConst.FIREBASE_AUTHENTICATE_SUCCESSFUL, null, null)));
+
+    when(loginPresenterMock.signUpAccount(email, password)).thenAnswer((_) {
+      loginViewMock.showOrHideLoading(false);
+      loginViewMock.showMessage("Login Realizado com sucesso");
+    });
+
+    // THEN
+    loginFirebaseAuthMock
+        .authenticateWithEmailAndPassword(email, password)
+        .then((value) => {
+              expect(true, value.hasAuthenticateSuccessful),
+              expect(FirebaseAuthConst.FIREBASE_AUTHENTICATE_SUCCESSFUL,
+                  value.message)
+            });
+
+    loginPresenterMock.signUpAccount(email, password);
+
+    verifyInOrder([
+      loginFirebaseAuthMock.authenticateWithEmailAndPassword(email, password),
+      loginViewMock.showOrHideLoading(false),
+      loginViewMock.showMessage("Login Realizado com sucesso")
+    ]);
+  });
+
+  test(
+      "should not call authenticate method firebase when user send invalid data",
+      () {
+    // GIVEN
+    var email = "osvaldo.filho@al.ifnet.edu.br";
+    var password = "";
+
+    // WHEN
+    when(loginFirebaseAuthMock.authenticateWithEmailAndPassword(
+            email, password))
+        .thenAnswer((_) => Future<FirebaseAuthVO>.value(FirebaseAuthVO(false,
+            FirebaseAuthConst.FIREBASE_AUTHENTICATE_UNSUCCESSFUL, null, null)));
+
+    when(loginPresenterMock.signUpAccount(email, password)).thenAnswer((_) {
+      loginViewMock.showMessage("Digite os campos corretamente");
+    });
+
+    // THEN
+    loginFirebaseAuthMock
+        .authenticateWithEmailAndPassword(email, password)
+        .then((value) => {
+              expect(false, value.hasAuthenticateSuccessful),
+              expect(FirebaseAuthConst.FIREBASE_AUTHENTICATE_UNSUCCESSFUL,
+                  value.message)
+            });
+
+    loginPresenterMock.signUpAccount(email, password);
+
+    verifyInOrder([loginViewMock.showMessage("Digite os campos corretamente")]);
+  });
 }
