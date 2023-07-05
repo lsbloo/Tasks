@@ -500,6 +500,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "pretty_dio_logger",
+      "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/pretty_dio_logger-1.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "process",
       "rootUri": "file:///home/osvaldoairon/.pub-cache/hosted/pub.dev/process-4.2.4",
       "packageUri": "lib/",
@@ -722,7 +728,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-07-04T01:23:26.660304Z",
+  "generated": "2023-07-05T02:18:36.708763Z",
   "generator": "pub",
   "generatorVersion": "3.0.0"
 }

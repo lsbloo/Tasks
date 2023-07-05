@@ -1,4 +1,4 @@
-#Mon Jul 03 22:24:19 BRT 2023
+#Tue Jul 04 23:19:54 BRT 2023
 base.0=/home/osvaldoairon/Documentos/repositorios/softRepo/Tasks/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
